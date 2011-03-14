@@ -2,7 +2,7 @@
 // define the temporary directory
 // and where audio files will be written to after conversion
 $tmpdir = "tmp";
-$audiodir = "/home/talkbox/www/classes/tts/mp3_tts";
+$audiodir = "/var/www/classes/tts/mp3_tts";
 $speech=$_REQUREST['sp'];
 // if the Text-To-Speech button was click, process the data
 //if (isset($_POST["make_audio"])) {

@@ -169,10 +169,12 @@ $ds->downloadMP3();
  
         d.add(0,-1,'Service Desk 1.0');
 <?php
-//require 'config.inc.php';/* Variables from my database include file */
+
+require 'config.inc.php';/* Variables from my database include file */
 	// Node(id, pid, name, url, title, target, isopen, img ,target) 
-		
-		$constr="dbname=speachbox  user=root  password=5373988";
+		global $username;
+		global $pass;
+		$constr="dbname=talkbox  user=$username  password=$pass";
 		$DBI =pg_connect($constr);
 		$query = "SELECT orderno, parentid, title, name,url,img,pane FROM folders";
 		$result = pg_exec($DBI,$query) or die ("Fail Query");

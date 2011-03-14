@@ -21,7 +21,7 @@ class PhasesController extends AppController {
   }
 	  function handleFileUpload($fileData, $fileName)
   {
-	 $path='/var/www/devel.mwds.info/web/talkbox2/pics/';
+	 $path='/var/www/pics/';
 
     $error = false;
 
