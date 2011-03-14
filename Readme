@@ -56,6 +56,10 @@ Create Your Database
 createuser talkbox
  createdatebase talkbox
 	
+ pgsql
+  
+ ALTER ROLE talkbox WITH PASSWORD 'talkbox';
+ \q
 
 exit the postgres shell
 	exit
@@ -68,4 +72,7 @@ exit
  psql -U talkbox -d talkbox </var/www/talkbox.pgql 
  this initalzies the database
 
+
+6-> Test
+ launch firefox and go to http://localhost
 
